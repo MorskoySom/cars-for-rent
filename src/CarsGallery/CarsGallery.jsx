@@ -1,15 +1,12 @@
+import { OneGalleryItem } from 'OneGalleryItem/OneGalleryItem';
 import datacars from '../cars.json';
-import { v4 as uuidv4 } from 'uuid';
 
-export const CarGallery = () => {
-    console.log(datacars);
+export const CarGallery = () => {    
     return (
         <div>
-            {datacars.map((car) => (
-                <div key={uuidv4()}>
-                    {car.make}
-                </div>
-            ))}
+            {datacars.map((car) => {
+                return <OneGalleryItem data={car} key={car.id}/>
+            })}
         </div>
     )
 }

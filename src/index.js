@@ -12,5 +12,3 @@ root.render(
     </React.StrictMode>
 );
 
-
-// basename='/car-rental'
