@@ -1,4 +1,4 @@
-import { GalleryItem, Image } from "./OneGalleryItem.styled"
+import { GalleryItem, Image, TitleMake, TitleModel, TitleContainer, TitleContainerName } from "./OneGalleryItem.styled"
 
 export const OneGalleryItem = ({ data }) => {
     return (
@@ -6,9 +6,18 @@ export const OneGalleryItem = ({ data }) => {
             <div>
                 <Image src={data.img} alt={data.make} />           
             </div>
-            <h1>
-                {data.make} , {data.model}
-            </h1>
+            <TitleContainer>
+                <TitleContainerName>                    
+                    <TitleMake>
+                        {data.make} <TitleModel>{data.model},</TitleModel>
+                    </TitleMake>
+                    
+                    <TitleMake>
+                         {data.year}
+                    </TitleMake>
+                </TitleContainerName>
+            </TitleContainer>
+            
         </GalleryItem>
     )
 }
