@@ -12,6 +12,8 @@ export const GalleryItem = styled.li`
 export const TitleContainer = styled.div`
 display: flex;
 justify-content: space-between;
+padding-top: 14px;
+padding-right: 10px;
 `
 export const TitleContainerName = styled.div`
 display: flex;

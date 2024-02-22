@@ -10,12 +10,14 @@ export const OneGalleryItem = ({ data }) => {
                 <TitleContainerName>                    
                     <TitleMake>
                         {data.make} <TitleModel>{data.model},</TitleModel>
-                    </TitleMake>
-                    
+                    </TitleMake>                    
                     <TitleMake>
-                         {data.year}
+                        {data.year}
                     </TitleMake>
                 </TitleContainerName>
+                <TitleMake>
+                    {data.rentalPrice}
+                </TitleMake>
             </TitleContainer>
             
         </GalleryItem>
